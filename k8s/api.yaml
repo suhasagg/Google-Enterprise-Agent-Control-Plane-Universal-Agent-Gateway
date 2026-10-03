@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: agent-api, namespace: agent-platform}
+spec:
+  replicas: 2
+  selector: {matchLabels: {app: agent-api}}
+  template:
+    metadata: {labels: {app: agent-api}}
+    spec:
+      containers:
+      - {name: api, image: google-enterprise-agent-control-plane:latest, ports: [{containerPort: 8000}]}
