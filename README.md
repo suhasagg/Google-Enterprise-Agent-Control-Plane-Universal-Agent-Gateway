@@ -397,10 +397,6 @@ OpenTelemetry / Audit
 [ ] backup and DR drills
 ```
 
-## Important Boundary
-
-This is a substantive runnable reference, not a claim that a generic ZIP is deploy-as-is inside every enterprise. True production requires the target organization's identity, Google Cloud configuration, certificates, networks, private APIs, credentials, SLOs, compliance and security review.
-
 **Agent intelligence is not agent authority.**
 
 
